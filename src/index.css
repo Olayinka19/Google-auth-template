@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-size: 27px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -7,7 +8,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #1e6a2c;
   color:white;
-  /* background-image: url("https://www.transparenttextures.com/patterns/fake-luxury.png");  */
+  background-image: url("https://images.pexels.com/photos/1097456/pexels-photo-1097456.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); 
 }
 
 code {

@@ -33,7 +33,7 @@ const Navbar = () => {
         <li><Dropdown.Item href='/shelterForm'>🐻ShelterForm</Dropdown.Item></li>
         <li><Dropdown.Item href='/userForm'>😎User Sign Up</Dropdown.Item></li>
         <li><Dropdown.Item href='/moreInformation'>♨More Info</Dropdown.Item></li>
-        <li><Dropdown.Item href='/'>⤴Back</Dropdown.Item></li>
+        <li><Dropdown.Item href='/'>⤴Exit</Dropdown.Item></li>
 
 
 

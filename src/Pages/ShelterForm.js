@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import { Button, Form } from 'react-bootstrap/';
+import { UserAuth } from '../Context/AuthContext';
+import { Link } from 'react-router-dom';
 
 function ShelterForm() {
-
+ const {user} = UserAuth();
     const [shelterInfo, setShelterInfo] = useState({
         name: "",
         address: '',
@@ -107,6 +109,7 @@ function ShelterForm() {
                     Submit
                 </Button>
             </Form>
+            
             
         </>
     )

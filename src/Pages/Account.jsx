@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 // import { UserAuth } from '../context/AuthContext';
 import { UserAuth } from '../Context/AuthContext';
 const Account = () => {
@@ -26,6 +27,11 @@ const Account = () => {
       <button onClick={handleSignOut} className='border py-2 px-5 mt-10'>
         Logout
       </button>
+      {user?.displayName ? (
+       <button><Link to='/shelterForm'>👉🏼Shelter Form</Link></button> 
+      ) : (
+        <button className='link'><Link to='/'>Home</Link></button>
+      )}
     </div>
   );
 };
