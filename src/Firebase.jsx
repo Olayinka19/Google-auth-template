@@ -8,12 +8,13 @@ import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBYrAizgRcLoDLbjT1Z9J8um6G23oiszdw",
-  authDomain: "pawster-capstone.firebaseapp.com",
-  projectId: "pawster-capstone",
-  storageBucket: "pawster-capstone.appspot.com",
-  messagingSenderId: "465105046179",
-  appId: "1:465105046179:web:1a9126267c672751c60d16"
+  apiKey: "AIzaSyANUqc-wGTX9Qp0EpP15uVi3fEsJGQyxBw",
+  authDomain: "majo-349b7.firebaseapp.com",
+  projectId: "majo-349b7",
+  storageBucket: "majo-349b7.appspot.com",
+  messagingSenderId: "322715951472",
+  appId: "1:322715951472:web:6dc9a6f3270b64f22e6fb5",
+  measurementId: "G-3P94ZDZCS1"
 };
 
 // Initialize Firebase

@@ -4,8 +4,7 @@ import Signin from './Signin'
 function Home() {
   return (
     <div>
-    <h1>Welcome To My HomePage</h1>
-   
+    <h1 className='link'> Firebase Authentication</h1>
     </div>
   )
 }

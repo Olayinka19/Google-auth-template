@@ -3,6 +3,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 // import { UserAuth } from '../context/AuthContext';
 import { UserAuth } from '../Context/AuthContext';
+
+// import React from 'react';
+
 const Account = () => {
   const { logOut, user } = UserAuth();
 
@@ -21,7 +24,7 @@ const Account = () => {
         <p>Welcome, {user?.displayName}</p>
         <h3>{user?.email}</h3>
         <div>
-          {user?.photoURL}
+          <img src={user?.photoURL} />
         </div>
       </div>
       <button onClick={handleSignOut} className='border py-2 px-5 mt-10'>
@@ -32,6 +35,9 @@ const Account = () => {
       ) : (
         <button className='link'><Link to='/'>Home</Link></button>
       )}
+      
+
+      
     </div>
   );
 };

@@ -20,6 +20,11 @@ const Navbar = () => {
       <h1 className='text-center text-2xl font-bold'>
        <marquee direction="Up">Pawster Capstone Firebase</marquee> 
       </h1>
+      <div className="link">
+      {user?.displayName ? ( 
+        <img src={user.photoURL} alt="pfp" width="35px" height="35px" border-radius="50%" />
+      ) : null} 
+      </div>
       <Dropdown className='Nav-list'>
         <Dropdown.Toggle variant="success" id='dropdown-basic'>
          
@@ -29,17 +34,12 @@ const Navbar = () => {
         </Dropdown.Toggle>
         <Dropdown.Menu className='ola'>
         <ul>
-        <li><Dropdown.Item eventKey="1" href='/account'>😁Profile</Dropdown.Item></li>
-        <li><Dropdown.Item href='/shelterForm'>🐻ShelterForm</Dropdown.Item></li>
-        <li><Dropdown.Item href='/userForm'>😎User Sign Up</Dropdown.Item></li>
-        <li><Dropdown.Item href='/moreInformation'>♨More Info</Dropdown.Item></li>
-        <li><Dropdown.Item href='/'>⤴Exit</Dropdown.Item></li>
-
-
-
-        </ul>
-          
-          
+        <li><Dropdown.Item eventKey="1" href='/account' className='link'>Profile</Dropdown.Item></li>
+        {/* <li><Dropdown.Item href='/shelterForm'>ShelterForm</Dropdown.Item></li>
+        <li><Dropdown.Item href='/userForm'>User Sign Up</Dropdown.Item></li>
+        <li><Dropdown.Item href='/moreInformation'>More Info</Dropdown.Item></li> */}
+        <li><Dropdown.Item href='/' className='link'>⤴Exit</Dropdown.Item></li>
+        </ul> 
         </Dropdown.Menu>
       </Dropdown>
       
